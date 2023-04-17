@@ -1,0 +1,571 @@
+<html>
+<head>
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<title></title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+nav{
+height:50px;
+width:100%;
+background:;
+}
+.main{
+height:100%;
+width:190px;
+background:;
+display:flex;
+justify-content:space-around;
+align-items:center;
+float:right;
+padding-top:10px;
+}
+
+nav .main div{
+height:30px;
+width:30px;
+background:;
+border-radius:50%;
+}
+nav .main .heading2{
+background-size:cover;
+background-position:center;
+}
+.notification{
+font-size:20px;
+position:absolute;
+top:10px;
+}
+nav .main .heading3{
+background:;
+font-size:20px;
+background-size:cover;
+background-position:center;
+}
+.search{
+position:absolute;
+top:10px;
+} 
+nav .main .heading4{
+background:url("/storage/emulated/0/bootstrap/b.jpg");
+background-size:cover;
+background-position:center;
+}
+.logo{
+height:100%;
+width:100px;
+}
+/*Nav bar ends here*/
+
+
+footer{
+padding-top:5px;
+height:55px;
+width:100%;
+background:#f1f1f1;
+position:fixed;
+bottom:0px;
+display:flex;
+
+justify-content:space-around;
+font-size:12px;
+}
+footer div{
+height:60%;
+width:70px;
+background:;
+text-align:center;
+display:grid;
+place-items:center;
+}
+footer div div{
+height:30px;
+width:30px;
+background:;
+border-radius:50%;
+font-size:25px;
+}
+.footer3{
+position:relative;
+
+height:40px;
+width:40px;
+border:2px solid #000;
+border-radius:50%;
+background:none;
+}
+.footer1{
+background:url("/storage/emulated/0/MV/images/profile-home.png");
+background-size:cover;
+background-position:;
+}
+/* FOOTER ENDS HERE*/
+.content{
+height:300px;
+width:100%;
+background:;
+}
+.thumbnail{
+height:200px;
+width:100%;
+position:relative;
+border-bottom:2px solid red;
+}
+.thumbnail .duration{
+height:auto;
+width:auto;
+background:#000;
+border:2px solid black;
+border-left:5px solid black;
+border-right:10px solid black;
+position:absolute;
+color:#fff;
+left:280px;
+bottom:10px;
+}
+.clogo{
+background:url("/storage/emulated/0/Download/blank-paper-magnifying-glass-ink-bottle-historic-map.jpg");
+background-size:cover;
+background-position:center;
+}
+h3{
+font-weight:0px;
+}
+.bottom{
+height:100px;
+width:100%;
+background:;
+padding-top:10px;
+display:flex;
+justify-content:space-around;
+}
+.clogo{
+height:40px;
+width:40px;
+border-radius:50%;
+}
+.topic{
+height:auto;
+width:280px;
+background:;
+text-align:;
+}
+.channel{
+font-size:14px;
+position:relative;
+top:-7px;
+}
+
+/*button*/
+button{
+border:none;
+background:#f1f1f1;
+border-left:5px solid #f1f1f1;
+border-right:5px solid #f1f1f1;
+}
+.bottom_space{
+height:60px;
+width:100%;
+}
+/*profiel styling starts from here*/
+.pmain{
+position:absolute;
+height:100%;
+width:100%;
+background:#fff;
+top:100%;
+transition:all .3s linear;
+}
+.pmain .cross{
+font-size:30px;
+padding-left:10px;
+}
+.hid{
+display:none;
+}
+.pchannel{
+height:80px;
+width:100%;
+background:;
+padding-top:5px;
+}
+.pchannel .prof{
+height:50px;
+width:50px;
+background:url("/storage/emulated/0/bootstrap/b.jpg");
+background-size:cover;
+background-position:center;
+border-radius:50%;
+margin:0px 0px 0px 15px;
+display:inline-block;
+transform:translateY(-10px)
+}
+.pchannel .data{
+font-size:16px;
+display:inline-block;
+background:;
+position:relative;
+top:-30px;
+left:10px;
+transf
+}
+/*profile styling end  here*/
+
+/*your channel section starts from here */
+.yourChannel{
+height:40px;
+width:100%;
+background:;
+margin-top:5px;
+padding-top:0px;
+}
+.yourProfile{
+height:30px;
+width:30px;
+background:;
+margin-left:20px;
+display:inline-block;
+}
+.yourChannel .desc{
+display:inline-block;
+position:relative;
+left:30px;
+top:-10px;
+}
+.category{
+margin:15px 0px 5px 0px;
+height:40px;
+width:100%;
+background:#fff;
+display:grid;
+grid-template-columns:repeat(8,auto);
+grid-gap:10px;
+overflow-x:scroll;
+padding-left:10px;
+}
+
+.category .slide{
+height:30px;
+background:#f1f1f1;
+border-left:10px solid #f1f1f1;
+border-right:10px solid #f1f1f1;
+display:grid;
+place-items:center;
+border-radius:5px;
+}
+a{
+color:#000;
+}
+.explore{
+height:100%;
+width:80%;
+background:#fff;
+position:absolute;
+z-index:2;
+left:-290px;
+transition:all .3s linear;
+color:#000;
+}
+.controller{
+height:100%;
+width:20%;
+background:;
+z-index:1;
+position:absolute;
+right:0;
+}
+.controller{
+transition:.3s linear;
+}
+.hide{
+display:none;
+}
+/*design of your channel section ends here */
+/*shorts*/
+.shorts{
+height:auto;
+width:100%;
+background:#fff;
+margin:10px 0px;
+padding-top:10px;
+padding-left:10px;
+}
+.scontent{
+height:300px;
+width:100%;
+background:;
+display:grid;
+grid-template-columns:repeat(6,200px);
+column-gap:10px;
+overflow-x:scroll;
+padding-right:10px;
+overflow-y:hidden;
+}
+.scontent .data{
+height:100%;
+border-radius:10px;
+}
+.shorts ul{
+position:relative;
+background:;
+width:10px;
+z-index:1;
+left:160px;
+}
+.shorts ul li{
+height:7px;
+width:7px;
+color:white;
+}
+.items{
+display:flex;
+position:relative;
+top:80px;
+background:;
+width:150px;
+align-items:center;
+text-align:center;
+margin-top:10px;
+left:15px;
+}
+.items h5{
+padding-left:30px;
+padding-top:10px;
+}
+.items i{
+font-size:25px;
+}
+</style>
+</head>
+<body class="body">
+<!-- explore section starts from here-->
+<div class="explore">
+<div class=""><i class="bi bi-youtube"style="font-size:40px;color:red;position:absolute;left:10px;top:7px;"></i><h3 style="position:absolute;left:55px;top:15px"><b>YouTube</b></h3></div>
+<div class="items"><i class="bi bi-fire"></i><h5>Trending</h5></div>
+<div class="items"><i class="bi bi-music-note"></i><h5>Music</h5></div>
+<div class="items"><i class="bi bi-controller"></i><h5>Gaming</h5></div>
+<div class="items"><i class="bi bi-trophy"></i><h5>Sport</h5></div>
+</div>
+
+
+<div class="controller hide"onclick="slideLeft();"></div>
+<!-- navigation part -->
+<nav>
+<div class="main">
+<div class="heading1"><i class="bi bi-rss"style="font-size:20px"></i></div>
+<div class="heading2"><i class="bi bi-bell notification"style="font-size:20px;padding-top:5px;"></i></div>
+<div class="heading3"><a href="search.html"><i class="bi bi-search search"style="padding-top:5px;"></i></a></div>
+<div class="heading4"onclick="moveTop()"></div>
+</div>
+<div class="logo"><i class="bi bi-youtube"style="font-size:40px;color:red;position:absolute;left:10px;top:7px;"></i><h3 style="position:absolute;left:55px;top:15px"><b>YouTube</b></h3></div>
+</nav>
+ <!--search category -->
+ <div class="category"><div class="slide"onclick="slideRight();"><i class="bi bi-compass"style="font-size:20px;"></i></div><div class="slide"style="background:gray;border-left:10px solid gray;border-right:10px solid gray;">All</div><div class="slide">Comedy</div><div class="slide">Movie</div><div class="slide">Mixes</div><div class="slide">Music</div><div class="slide">WebDevelopment</div><div class="slide">Vlog</div><div class="slide">Live</div></div>
+ <!-- content will display here  -->
+ <div class="content">
+<a href="play.html"> <div class="thumbnail"style="background:url('/storage/emulated/0/MV/images/feed-image-2.png');background-size:cover;background-position:center;">
+ <div class="duration">2:10:53</div>
+ </div>
+ </a>
+ <div class="bottom">
+ <div class="clogo"></div>
+<div class="topic"> <p>Bahubali-2(2023) Full Movie Hindi Dubbed|Prabhash|Rashmika|Mahesh..</p>
+<p class="channel">Dibri Digital . 1M views . 1 week ago</p>
+</div>
+ </div>
+ </div>
+ 
+ <!-- shorts starts from here -->
+ <div class="shorts">
+ <i class="bi bi-cast"style="color:red;font-size:25px;"></i><h4  style="display:inline-block;padding-left:15px;transform:translateY(-2px);"><b>Shorts</b></h4>
+ <div class="scontent">
+ <div class="data"style="background:url('/storage/emulated/0/Pictures/facebook/1681474293763.jpg');background-size:cover;background-position:center;"><ul>
+ <li></li>
+ <li></li>
+ <li></li>
+ </ul>
+ <div style="position:relative;top:180px;padding:0px 5px;"><p style="color:#fff;line-height:1rem;">Most Dangerous Version of Cristiano|noodle hair style</p><p style="color:#fff;font-size:14px;transform:translateY(-3px);">777k views</p></div>
+ </div>
+ <div class="data"style="background:url('/storage/emulated/0/Pictures/facebook/1677988797724.jpg');background-size:cover;background-position:center;"><ul>
+ <li></li>
+ <li></li>
+ <li></li>
+ </ul>
+ <div style="position:relative;top:180px;padding:0px 5px;"><p style="color:#fff;line-height:1rem;">Most Dangerous Version of Cristiano|noodle hair style</p><p style="color:#fff;font-size:14px;transform:translateY(-3px);">777k views</p></div>
+ </div>
+ <div class="data"style="background:url('/storage/emulated/0/Pictures/facebook/1678035274177.jpg');background-size:cover;background-position:center;"><ul>
+ <li></li>
+ <li></li>
+ <li></li>
+ </ul>
+ <div style="position:relative;top:180px;padding:0px 5px;"><p style="color:#fff;line-height:1rem;">Most Dangerous Version of Cristiano|noodle hair style</p><p style="color:#fff;font-size:14px;transform:translateY(-3px);">777k views</p></div>
+ </div>
+
+ <div class="data"style="background:url('/storage/emulated/0/Pictures/facebook/1681474293763.jpg');background-size:cover;background-position:center;"><ul>
+ <li></li>
+ <li></li>
+ <li></li>
+ </ul>
+ <div style="position:relative;top:180px;padding:0px 5px;"><p style="color:#fff;line-height:1rem;">Most Dangerous Version of Cristiano|noodle hair style</p><p style="color:#fff;font-size:14px;transform:translateY(-3px);">777k views</p></div>
+ </div>
+ <div class="data"style="background:url('/storage/emulated/0/Pictures/facebook/1681474293763.jpg');background-size:cover;background-position:center;"><ul>
+ <li></li>
+ <li></li>
+ <li></li>
+ </ul>
+ <div style="position:relative;top:180px;padding:0px 5px;"><p style="color:#fff;line-height:1rem;">Most Dangerous Version of Cristiano|noodle hair style</p><p style="color:#fff;font-size:14px;transform:translateY(-3px);">777k views</p></div>
+ </div>
+ <div class="data"style="background:url('/storage/emulated/0/Pictures/facebook/1681474293763.jpg');background-size:cover;background-position:center;"><ul>
+ <li></li>
+ <li></li>
+ <li></li>
+ </ul>
+ <div style="position:relative;top:180px;padding:0px 5px;"><p style="color:#fff;line-height:1rem;">Most Dangerous Version of Cristiano|noodle hair style</p><p style="color:#fff;font-size:14px;transform:translateY(-3px);">777k views</p></div>
+ </div>
+ </div>
+ </div>
+ 
+ 
+ <div class="content">
+ <a href="play.html"><div class="thumbnail"style="background:url('/storage/emulated/0/MV/images/cover.png');background-size:cover;background-position:center;">
+ <div class="duration">2:10:53</div>
+ </div>
+ </a>
+ <div class="bottom">
+ <div class="clogo"></div>
+ <div class="topic"><p>Party With Friends with Fresh Air.Cold weather...</p>
+ <p class="channel">Argon  Vlog . 1M views . 1 week ago</p>
+ </div>
+ </div>
+ </div>
+ 
+ <div class="content">
+ <a href="play.html"><div class="thumbnail"style="background:url('/storage/emulated/0/e-commerce website/images/thumbnail2.png');background-size:cover;background-position:center;">
+ <div class="duration">2:10:53</div>
+ </div>
+ </a>
+ <div class="bottom">
+ <div class="clogo"></div>
+ <div class="topic"><p>First Cycle Experience in USA.It is amaging Experience </p>
+ <p class="channel">John  Vlog . 1M views . 1 week ago</p>
+ </div>
+ </div>
+ </div>
+ 
+ <div class="content">
+ <a href="play.html"><div class="thumbnail"style="background:url('/storage/emulated/0/MV/images/feed-image-2.png');background-size:cover;background-position:center;">
+ <div class="duration">2:10:53</div>
+ </div>
+ </a>
+ <div class="bottom">
+ <div class="clogo"></div>
+ <div class="topic"> <p>Bahubali-2(2023) Full Movie Hindi Dubbed|Prabhash|Rashmika|Mahesh..</p>
+ <p class="channel">Dibri Digital . 1M views . 1 week ago</p>
+ </div>
+ </div>
+ </div>
+ 
+ <div class="content">
+<a href="play.html"> <div class="thumbnail"style="background:url('/storage/emulated/0/MV/images/cover.png');background-size:cover;background-position:center;">
+ <div class="duration">2:10:53</div>
+ </div>
+ </a>
+ <div class="bottom">
+ <div class="clogo"></div>
+ <div class="topic"><p>Party With Friends with Fresh Air.Cold weather...</p>
+ <p class="channel">Argon  Vlog . 1M views . 1 week ago</p>
+ </div>
+ </div>
+ </div>
+ 
+ <div class="content">
+ <a href="play.html"><div class="thumbnail"style="background:url('/storage/emulated/0/e-commerce website/images/thumbnail2.png');background-size:cover;background-position:center;">
+ <div class="duration">2:10:53</div>
+ </div>
+ </a>
+ <div class="bottom">
+ <div class="clogo"></div>
+ <div class="topic"><p>First Cycle Experience in USA.It is amaging Experience </p>
+ <p class="channel">John  Vlog . 1M views . 1 week ago</p>
+ </div>
+ </div>
+ </div>
+ 
+ <!--This is for bottom space -->
+ <div class="bottom_space"></div>
+<!--footer part -->
+<footer>
+<div><a href="home.html"><div class="footer1"></div></a>Home</div>
+<div><div class="footer2"><i class="bi bi-cast"></i></div>Shorts</div>
+<div style="transform:translateY(2px);"><div class="footer3"><h1>+</h1></div></div>
+<div><div class="footer4"><i class="bi bi-collection-play"></i></div>Subcriptions</div>
+<div><a href="library.html"><div class="footer5"><i class="bi bi-file-play"></i></div></a>Library</div>
+</footer>
+
+
+<!-- profile design starts from here -->
+<div class="pmain hid">
+<p class="cross" onclick="moveBottom();"><i class="bi bi-x-lg"></i></p>
+<div class="pchannel"><div class="prof"></div><p class="data"style="transform:translateY(10px);">webDev<br>@wedDev777</p><p class="data"style="padding-left:73px;color:blue;">Manage Your Google Account</p></div>
+
+<!-- Your channel section starts from here -->
+<div class="yourChannel"><div class="yourProfile yourChannl"><i class="bi bi-person-square"style="font-size:25px;position:relative;top:-7px;"></i></div><p class="desc">Your channel</p></div>
+<div class="yourChannel"><div class="yourProfile incognito"style="border:2px solid black;border-radius:50%;transform:translateY(-5px);"><i class="bi bi-incognito"style="font-size:25px;"></i></div><p class="desc">Turn on Incognito</p></div>
+<div class="yourChannel"><div class="yourProfile add"style="background:url('/storage/emulated/0/MV/images/add-friends.png');background-size:90%;background-position:center;background-repeat:no-repeat;"></div><p class="desc">Add account</p></div>
+<hr>
+<div class="yourChannel"><div class="yourProfile purchase"style="border:1px solid black;border-radius:50%;transform:translateY(-10px);"><i class="bi bi-currency-dollar"style="font-size:25px;"></i></div><p class="desc">Purchase and membership</p></div>
+<div class="yourChannel"><div class="yourProfile time"><i class="bi bi-file-bar-graph"style="font-size:25px;"></i></div><p class="desc">Time watched</p></div>
+<div class="yourChannel"><i class="bi bi-person-lines-fill"style="font-size:28px;position:absolute;left:20px;"></i><div class="yourProfile datail"></div><p class="desc">Your data in Youtube</p></div>
+<hr>
+<div class="yourChannel"><div class="yourProfile setting"style="background:url('/storage/emulated/0/MV/images/setting.png');background-size:cover;"></div><p class="desc">Settings</p></div>
+<div class="yourChannel"><div class="yourProfile help"style="background:url('/storage/emulated/0/MV/images/help.png');background-size:cover;"></div><p class="desc">Help and Feedback</p></div>
+<hr>
+<div class="yourChannel"><div class="yourProfile studio"style="border:1px solid red;border-radius:50%;transform:translateY(-10px);"><i class="bi bi-file-play"style="font-size:20px;color:red;position:relative;left:4px;top:4px;"></i></div><p class="desc">YouTube Studio</p></div>
+<div class="yourChannel"><div class="yourProfile kids"><i class="bi bi-youtube"style="font-size:28px;position:relative;top:-5px;color:red;"></i></div><p class="desc">YouTube kids</p></div>
+<!-- Your channel section ends from here -->
+
+
+<!-- profile design end here -->
+</div>
+<script type="text/javascript">
+let pmain=document.querySelector(".pmain");
+let body=document.querySelector(".body");
+const moveTop=()=>{
+pmain.classList.remove("hid");
+body.style.overflow="hidden";
+setTimeout(function (){
+pmain.style.top="0px";
+},300)
+
+}
+const moveBottom=()=>{
+pmain.style.top="100%";
+body.style.overflow="";
+setTimeout(function (){
+pmain.classList.add("hid");
+},500)
+}
+let explore=document.querySelector(".explore");
+let controller=document.querySelector(".controller");
+const slideRight=()=>{
+controller.classList.remove("hide");
+explore.style.left="0px";
+body.style.overflow="hidden";
+controller.style.background="gray";
+controller.style.opacity="0.4";
+}
+const slideLeft=()=>{
+explore.style.left="-290px";
+body.style.overflow="";
+controller.style.background="";
+controller.classList.add("hide");
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

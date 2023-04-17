@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+/*styling of video starts from here*/
+.vid{
+height:200px;
+width:100%;
+}
+video{
+height:100%;
+width:100%;
+}
+/*description*/
+.desc{
+height:150px;
+width:100%;
+padding:10px 0px 0px 10px;
+}
+.data{
+display:flex;
+justify-content:space-between;
+padding:5px 15px 0px 0px;
+color:gray;
+}
+.channel{
+height:50px;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:10px;
+}
+.channel .profile{
+height:50%;
+width:180px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.channel button{
+height:35px;
+width:80px;
+background:#000;
+color:#fff;
+border:none;
+border-radius:1rem;
+margin-right:10px;
+}
+.profile .logo{
+height:40px;
+width:40px;
+background:url("/storage/emulated/0/Download/blank-paper-magnifying-glass-ink-bottle-historic-map.jpg");
+background-size:cover;
+background-position:center;
+border-radius:50%;
+}
+.reaction{
+height:40px;
+width:100%;
+display:grid;
+grid-template-columns:repeat(6,120px);
+grid-gap:10px;
+overflow-x:scroll;
+padding:0px 10px;
+margin-top:30px;
+}
+.reaction div{
+height:100%;
+background:#f1f1f1;
+border-radius:1rem;
+}
+
+/* comment section */
+.comment{
+height:120px;
+width:330px;
+background:#f1f1f1;
+margin:auto;
+border-radius:1rem;
+transform:translateY(15px);
+margin-bottom:30px;
+}
+.chat{
+height:50px;
+width:100%;
+background:;
+padding:0px 10px;
+display:flex;
+align-items:center;
+margin-top:5px;
+}
+.commenter,.commenter1{
+height:35px;
+width:35px;
+background:url("/storage/emulated/0/DCIM/Screenshots/Screenshot_20230115_161159.jpg");
+background-size:cover;
+background-position:top;
+border-radius:50%;
+margin-right:20px;
+}
+.commenter1{
+background:url("/storage/emulated/0/chatApplication/upload/1675654152611.jpg");
+background-size:cover;
+background-position:top;
+}
+.chat .detail{
+height:10px;
+width:10px;
+border:1px solid #000;
+transform:rotate(45deg);
+border-top:none;
+border-left:none;
+}
+/*style of similar videos*/
+.content{
+height:300px;
+width:100%;
+background:;
+}
+.thumbnail{
+height:200px;
+width:100%;
+position:relative;
+border-bottom:2px solid red;
+}
+.thumbnail .duration{
+height:auto;
+width:auto;
+background:#000;
+border:2px solid black;
+border-left:5px solid black;
+border-right:10px solid black;
+position:absolute;
+color:#fff;
+left:280px;
+bottom:10px;
+}
+.clogo{
+background:url("/storage/emulated/0/Download/blank-paper-magnifying-glass-ink-bottle-historic-map.jpg");
+background-size:cover;
+background-position:center;
+}
+h3{
+font-weight:0px;
+}
+.bottom{
+height:100px;
+width:100%;
+background:;
+padding-top:10px;
+display:flex;
+justify-content:space-around;
+}
+.clogo{
+height:40px;
+width:40px;
+border-radius:50%;
+}
+.topic{
+height:auto;
+width:280px;
+background:;
+text-align:;
+}
+.channel{
+font-size:14px;
+position:relative;
+top:-7px;
+}
+/* style of slider */
+.slider{
+height:480px;
+width:100%;
+background:#fff;
+position:absolute;
+top:700px;
+border-radius:10px;
+opacity:0;
+transition:.3s linear;
+overflow:hidden;
+}
+/* button */
+.button{
+height:40px;
+width:200px;
+background:;
+margin-top:50px;
+margin-left:20px;
+margin-bottom:10px;
+}
+.button button{
+height:40px;
+border:none;
+border:10px solid #000;
+background:black;
+color:#fff;
+border-radius:20px;
+}
+.button .new{
+border:10px solid #f1f1f1;
+margin-left:10px;
+background:#f1f1f1;
+color:#000;
+}
+.guideline{
+height:60px;
+width:100%;
+background:#f1f1f1;
+font-size:13px;
+padding-top:10px;
+padding-left:10px;
+transform:translateY(-15px);
+}
+.guideline p{
+font-size:16px;
+color:blue;
+}
+/*write comment section */
+.write{
+height:45px;
+width:100%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding-left:10px;
+padding-right:10px;
+transform:translateY(-10px);
+}
+.write input{
+height:35px;
+width:80%;
+border:none;
+outline:none;
+border-radius:2px;
+background:#f1f1f1;
+padding-left:10px;
+}
+/*comments and reply*/
+.cfield{
+height:230px;
+width:100%;
+position:relative;
+top:-25px;
+overflow-y:scroll;
+}
+.comm{
+display:flex;
+margin:0px 0px 0px 10px;
+}
+.comm .commentDis{
+height:100px;
+width:70%;
+}
+.comm i{
+font-size:20px;
+}
+.like{
+height:30px;
+width:70%;
+display:flex;
+justify-content:space-between;
+position:relative;
+top:-20px;
+}
+.dots{
+list-style-type:none;
+position:relative;
+left:-10px;
+top:10px;
+}
+.dots li{
+height:4px;
+width:4px;
+border-radius:50%;
+margin-top:3px;
+background:#000;
+}
+/*reaction*/
+.reaction .div{
+display:flex;
+align-items:center;
+padding:0px 20px;
+font-weight:bold;
+font-size:14px;
+justify-content:space-between;
+}
+.reaction .div i{
+font-size:16px;
+}
+/*back to home */
+.home{
+font-size:25px;
+position:absolute;
+top:0px;
+left:15px;
+z-index:4;
+}
+a{
+color:#000;
+cursor:pointer;
+}
+</style>
+</head>
+<body class="body">
+<a href="home.html"><i class="bi bi-arrow-left home"></i></a>
+<div class="vid">
+<video controls autoplay>
+<source src="/storage/emulated/0/html,css/video.mp4"type="video/mp4">
+</video>
+</div>
+<div class="desc"><h5><b>New released Hollywood Movie 2023 (official-movie)|| Hindi dubbed 2023....</b></h5><div class="data"><p>5.8k views</p><p>1 hr ago</p><p>#hollywood movie...<p style="color:#000">more</p></div>
+
+<div class="channel">
+<div class="profile"><div class="logo"></div><p><b>Nick Official</b></p><p style="font-size:14px;color:gray;">2.5M</p></div>
+<button>Subscribe</button>
+</div>
+</div>
+<!--reaction-->
+<div class="reaction">
+<div class="div" style="padding:0px 8px;"><i class="bi bi-hand-thumbs-up"></i>789k<div style="height:20px;width:1px;background:gray;"></div><i class="bi bi-hand-thumbs-down"></i></div>
+<div class="div"><i class="bi bi-chat-left-text"></i>Live chat</div>
+<div class="div"style="width:110px;"><i class="bi bi-share"></i>Share</div>
+<div class="div"style="width:110px;"><i class="bi bi-music-note-list"></i>Remix</div>
+<div class="div"style="width:130px;"><i class="bi bi-download"></i>Download</div>
+<div class="div"style="margin-left:10px;width:100px;"><i class="bi bi-folder-plus"></i>Save</div>
+</div>
+<!--comment section starts from here-->
+<div class="comment">
+<h5 style="padding:10px 0px 10px 10px;font-size:16px;"><b>Comments</b></h5>
+<div class="chat"><div class="commenter"></div><p style="padding-right:80px;">nice movie 🔥🔥🔥</p><div class="detail"onclick="moveTop();"></div></div>
+</div>
+<!--relative videos -->
+<div class="content">
+ <div class="thumbnail"style="background:url('/storage/emulated/0/MV/images/feed-image-2.png');background-size:cover;background-position:center;">
+ <div class="duration">2:10:53</div>
+ </div>
+ <div class="bottom">
+ <div class="clogo"></div>
+ <div class="topic"> <p>Bahubali-2(2023) Full Movie Hindi Dubbed|Prabhash|Rashmika|Mahesh..</p>
+ <p class="channel">Dibri Digital . 1M views . 1 week ago</p>
+ </div>
+ </div>
+ </div>
+ 
+ <div class="content">
+ <div class="thumbnail"style="background:url('/storage/emulated/0/MV/images/cover.png');background-size:cover;background-position:center;">
+ <div class="duration">2:10:53</div>
+ </div>
+ <div class="bottom">
+ <div class="clogo"></div>
+ <div class="topic"><p>Party With Friends with Fresh Air.Cold weather...</p>
+ <p class="channel">Argon  Vlog . 1M views . 1 week ago</p>
+ </div>
+ </div>
+ </div>
+ 
+ <div class="content">
+ <div class="thumbnail"style="background:url('/storage/emulated/0/e-commerce website/images/thumbnail2.png');background-size:cover;background-position:center;">
+ <div class="duration">2:10:53</div>
+ </div>
+ <div class="bottom">
+ <div class="clogo"></div>
+ <div class="topic"><p>First Cycle Experience in USA.It is amaging Experience </p>
+ <p class="channel">John  Vlog . 1M views . 1 week ago</p>
+ </div>
+ </div>
+ </div>
+ <!--comment slider -->
+ <div class="slider hid"><h3 style="transform:translate(20px,30px);"><b>Comments</b></h3><h1 style="float:right;padding:0px 10px;background:;cursor:pointer;transform:translateY(-10px)"onclick="moveBottom();"><i class="bi bi-x-lg"></i></h1>
+ <div class="button"><button>Top</button><button class="new">Newest</button></div>
+ <hr>
+ <!--write guideline -->
+ <div class="guideline">Remember to keep comments respectful and to follow our<p>Community Guideline</p></div>
+ 
+ <!--write comments-->
+ <div class="write"><div class="clogo"></div><input type="text"class="input"placeholder="Add a Comment..."></div>
+ <hr style="transform:translateY(-20px);">
+ 
+ <div class="cfield">
+ 
+<div class="comm"> 
+<div class="commenter"></div>
+<div class="commentDis">
+<p style="color:gray;">Anil Hasda • 56 min ago</p>
+<p style="transform:translateY(-15px);">nice movie 🔥🔥🔥</p>
+<div class="like"><div><i class="bi bi-hand-thumbs-up"></i>100k</div><i class="bi bi-hand-thumbs-down"></i><i class="bi bi-chat-left-text"></i></div>
+</div>
+<ul class="dots">
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+<p style="padding-left:70px;color:blue;padding-top:10px;">123 reply</p>
+
+<div class="comm"> 
+<div class="commenter1"></div>
+<div class="commentDis">
+<p style="color:gray;">John Rodiguez • 33 min ago</p>
+<p style="transform:translateY(-15px);">love this one🔥🔥🔥</p>
+<div class="like"><div><i class="bi bi-hand-thumbs-up"></i>1k</div><i class="bi bi-hand-thumbs-down"></i><i class="bi bi-chat-left-text"></i></div>
+</div>
+<ul class="dots">
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+<p style="padding-left:70px;color:blue;padding-top:10px;">13 reply</p>
+
+<div class="comm"> 
+<div class="commenter"></div>
+<div class="commentDis">
+<p style="color:gray;">Anil Hasda • 56 min ago</p>
+<p style="transform:translateY(-15px);">nice movie 🔥🔥🔥</p>
+<div class="like"><div><i class="bi bi-hand-thumbs-up"></i>100k</div><i class="bi bi-hand-thumbs-down"></i><i class="bi bi-chat-left-text"></i></div>
+</div>
+<ul class="dots">
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+<p style="padding-left:70px;color:blue;padding-top:10px;">123 reply</p>
+
+<div class="comm"> 
+<div class="commenter1"></div>
+<div class="commentDis">
+<p style="color:gray;">Jubin Rodriguez• 5 min ago</p>
+<p style="transform:translateY(-15px);">awesome 🔥🔥🔥</p>
+<div class="like"><div><i class="bi bi-hand-thumbs-up"></i>100k</div><i class="bi bi-hand-thumbs-down"></i><i class="bi bi-chat-left-text"></i></div>
+</div>
+<ul class="dots">
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+<p style="padding-left:70px;color:blue;padding-top:10px;">123 reply</p>
+
+<div class="comm"> 
+<div class="commenter"></div>
+<div class="commentDis">
+<p style="color:gray;">Anil Hasda • 56 min ago</p>
+<p style="transform:translateY(-15px);">nice movie 🔥🔥🔥</p>
+<div class="like"><div><i class="bi bi-hand-thumbs-up"></i>100k</div><i class="bi bi-hand-thumbs-down"></i><i class="bi bi-chat-left-text"></i></div>
+</div>
+<ul class="dots">
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+<p style="padding-left:70px;color:blue;padding-top:10px;">123 reply</p>
+
+<div class="comm"> 
+<div class="commenter1"></div>
+<div class="commentDis">
+<p style="color:gray;">Anil Hasda • 30 min ago</p>
+<p style="transform:translateY(-15px);">nice movie 🔥🔥🔥</p>
+<div class="like"><div><i class="bi bi-hand-thumbs-up"></i>100k</div><i class="bi bi-hand-thumbs-down"></i><i class="bi bi-chat-left-text"></i></div>
+</div>
+<ul class="dots">
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+<p style="padding-left:70px;color:blue;padding-top:10px;">12 reply</p>
+
+
+</div>
+</div>
+ <script type="text/javascript">
+ let slider=document.querySelector(".slider");
+ let body=document.querySelector(".body");
+ const moveTop=()=>{
+ body.style.overflow="hidden";
+ slider.style.opacity="1";
+ setTimeout(()=>{
+ slider.style.top="200px";
+ },10)
+ }
+ const moveBottom=()=>{
+ body.style.overflow="";
+ slider.style.top="700px";
+ setTimeout(()=>{
+ slider.style.opacity="0";
+ },300)
+ }
+ </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
